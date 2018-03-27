@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Welcome to ANITS Blood Bank</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div id="wrapper">
+        <header>
+          <p align="center"><h2><font color="red">Welcome To ANITS Blood bank !</font></h2></p>
+    
+        </header>
+  
+        <nav>   
+          <ul class="nav">
+              <li class=""><a href="home.html">Home</a></li>
+              <li class="#"><a href="registation.html">Register</a></li>
+                <li><a href="why2.html">why To Donate?</a></li>
+                <li><a href="#">Who Needs Blood?</a></li>
+                <li><a href="#">Rotary</a></li>
+                <li><a href="main.html">Hisory Of Blood</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+            
+        </nav>  
+    
+        <div class="right" > 
+            <form name="sfrm"    id="border" method="post" action="newsearchresults.php" onsubmit="return iFormCheck();" style="margin:20px;">
+              <div style="background: url(find.jpg) repeat-y; width:280px;">  
+            <div style="height:300px;">
+              <div style="padding: 30px 20px 0px 30px;">        
+                <font class="headtxt">Find a Donor</font><br clear="all"><br>
+                <div class="left" style="width:65px;">Branch :</div><div class="left">
+                  <div id="state2">
+                  <select id="state2" NAME="state2"  style="width:165px;" class="textbox" onchange="return searchselectlocation(document.sfrm.state2.options[document.sfrm.state2.selectedIndex].value ,'',2);">  
+                    <option value="" selected> --- Select Branch ---</option>
+                    <option value="CSE" > CSE     <option value="ECE" > ECE <option value="MECH" > MECH     <option value="CIVIL" > CIVIL     <option value="CHEM" > CHEMICAL     
+                    <option value="IT" > IT   <option value="EEE" > EEE</select>
+                  </div>
+                  </div><br clear="all"><br>
+
+                    <div class="left" style="width:65px;">Year :</div><div class="left">
+                      <div id="city2">
+                        <select name="city2" id="city2"  style="width:165px;" class="textbox">
+        <!-- onchange="return FormTown();" -->
+                          <option value="" selected> --- Select year ---</option>
+                          <option value="1" selected> I/IV</option>
+                          <option value="2" selected> II/IV</option>
+                          <option value="3" selected> III/IV</option>
+                          <option value="4" selected> IV/IV</option>
+                        </select>
+                      </div>
+                    </div><br clear="all"><br>
+
+                      <div class="left" style="width:65px;">Secion :</div><div class="left">
+                    <div id="area2">
+            <select id="town2" NAME="town2"  style="width:165px;" class="textbox">
+              <option value="" selected> --- Select Section ---</option>
+              <option value="A" selected> A</option>
+              <option value="B" selected> B</option>
+              <option value="C" selected> C</option>
+          
+            </select></div></div><br clear="all"><br>
+
+        <div class="left" style="width:65px;">Group :</div><div class="left">
+          <select name="bloodgroup2" value="" style="width:165px;" class="textbox">
+          <option value="" selected> --- Select Group ---</option>
+          <option value="1" > A1+     
+          <option value="2" > A1- 
+          <option value="3" > A2+ 
+          <option value="4" > A2-   
+            <option value="5" > B+<option value="6" > B-      <option value="7" > A1B+      <option value="8" > A1B-      <option value="9" > A2B+      <option value="10" > A2B-     <option value="11" > AB+      <option value="12" > AB-      <option value="13" > O+     <option value="14" > O-     <option value="15" > A+     <option value="16" > A-         </select></div><br clear="all"><br>
+
+        </div>
+
+        <div class="right" style="margin:10px;>
+          <input type="hidden" name="search">
+    
+          <input type="image" src="search.jpg" width="60" height="23" border="0" alt="" >
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+<div class="left" style="width:563px;">
+  <div class="left"><img src="images/div-sp-crv.gif" width="563" height="11"></div><div class="clear"></div>
+  <div class="left" style="width:561px;border:1px solid #D7D7D7;border-top:0px;border-bottom:0px;">
+    <div class="left" style="width:561px;">
+            <div style="background: url(images/div-spheadbg-crv.gif) no-repeat; width:561px; height:50px;"><p style="padding-top:10px;padding-left:10px;"><font class="headtxt">Donor Registration</font></p></div>
+
+        <div class="left" style="width:561px; background: url(images/div-sp-leftbg.gif) no-repeat top left;">
+      <div class="left" style="width:561px; background: url(images/div-sp-rightbg.gif) no-repeat top right;">
+      <div class="left" style="padding-left:20px;">
+        
+<div id="form">
+        <form name="newfrm" action="register.php" method="post" onsubmit="return Register();" style="margin:0px;">
+        
+          <div style="padding:10px;"><span><font class="boldtxt">Name<font class="formclr">*</font> :</font></span><br><input type="text" name="name" tabindex="1" value="" class="textbox" size="30" maxlength="40">
+          </div>
+
+ <div style="padding:10px;"><span><font class="boldtxt">Registration number<font class="formclr">*</font> :</font></span><br><input type="text" name="name" tabindex="1" value="" class="textbox" size="30" maxlength="40">
+          </div>
+
+ <div style="padding:10px;"><span><font class="boldtxt">Address<font class="formclr">*</font> :</font></span><br><input type="text" name="name" tabindex="1" value="" class="textbox" size="30" maxlength="40">
+          </div>
+
+ <div style="padding:10px;"><span><font class="boldtxt">Gender<font class="formclr">*</font> :</font><br></span><input type="radio" name="gender" value="F" tabindex="8" >Female<br><input type="radio" name="gender" value="M" tabindex="9"  >Male</div>
+
+ <div style="padding:10px;">
+
+  <font class="boldtxt">year<font class="formclr">*</font> :</font><br></font>
+<select style="width:100px;" class="smalltxt textbox" name="year" size="1" tabindex="5">
+<option value="-1" selected>select..</option>
+  <option value="first year">frist year</option>
+  <option value="second year">second year</option>
+  <option value="third year">third year</option>
+  <option value="fourth year">fourth year</option>
+  </select>
+
+</div>
+
+
+
+<div style="padding:10px;">
+<span><font class="boldtxt">section<font class="formclr">*</font> :</font><br></span>
+
+<select  style="width:100px;" class="smalltxt textbox"  size="1" tabindex="5" name="section">
+<option value="-1" selected>select..</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+   </select>
+  
+</div>
+
+<div style="padding:10px;"><span><font class="boldtxt">EmailId <font class="formclr">*</font> :</font><br></span>
+  <input type="text" name="emailid" id="emailid" size="30"></div>
+
+  <div style="padding:10px;">
+    <span><font class="boldtxt">DOB<font class="formclr">*</font> :</font><br></span>  
+  <input type="text" name="dob" id="dob" size="30"></div>
+
+  <div style="padding:10px;"><span><font class="boldtxt">MobileNo<font class="formclr">*</font> :</font><br></span>
+  <input type="text" name="mobileno" id="mobileno" size="30"></div>
+
+
+  <div style="padding:10px;padding-top:1px;"><span><font class="boldtxt">Blood Group<font class="formclr">*</font> </font></span><br>
+            <select style="width:100px;" tabindex="10" class="smalltxt textbox" name="bloodgroup" size="1" tabindex="20">
+              <option value="">Select
+      <option value="1" > A1+     <option value="2" > A1-     <option value="3" > A2+     <option value="4" > A2-     <option value="5" > B+      <option value="6" > B-      <option value="7" > A1B+      <option value="8" > A1B-      <option value="9" > A2B+      <option value="10" > A2B-     <option value="11" > AB+      <option value="12" > AB-      <option value="13" > O+     <option value="14" > O-     <option value="15" > A+     <option value="16" > A-             </select>
+          </div>
+        
+      
+
+<div align="center"  style="border-radius: 25px";>
+      <input type="image" src="register.jpg" width="55" height="25" border="0" alt=""  ></div><br clear="all"><br>
+      </div>
+    </div>  </body>
+  </html>
+

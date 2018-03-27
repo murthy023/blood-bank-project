@@ -1,0 +1,57 @@
+body{
+  margin: 20;
+  background:url(back1.jpg); 
+	background-size: cover;
+	font-family: arial;
+	color: white;
+
+}
+
+#wrapper{
+  width: 910px;
+  height: 900px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+
+
+
+#border1 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 470px;
+    height: 280px;    
+}
+
+
+.textbox {
+	border: 1px solid #B3B3B3;
+	font: normal 11px Arial, Helvetica, Tahoma; 
+	color:#656565;
+}
+
+.left {
+	float:left;
+
+  color: #191919;
+}
+
+.right{
+	float:right;
+}
+
+.boldtxt {
+	font-weight:bold;
+	 }
+
+.headtxt {
+	font: normal 18px Georgia, Arial, Helvetica, Tahoma;
+	 color: red;
+	}
+
+.headtxt1 {
+	font: bold 13px Georgia, Arial, Helvetica, Tahoma;
+	 color: red;
+	}.clear{clear:both;}
